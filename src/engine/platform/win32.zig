@@ -20,8 +20,12 @@ pub const LPCSTR = win32.LPCSTR;
 pub const LPCWSTR = win32.LPCWSTR;
 pub const HICON = win32.HICON;
 pub const UINT = win32.UINT;
+pub const CS_HREDRAW = win32.user32.CS_HREDRAW;
+pub const CS_VREDRAW = win32.user32.CS_VREDRAW;
+pub const CS_OWNDC = win32.user32.CS_OWNDC;
 
-pub const GetModuleHandle = win32.kernel32.GetModuleHandleW;
+pub const GetLastError = win32.kernel32.GetLastError;
+pub const GetModuleHandleW = win32.kernel32.GetModuleHandleW;
 pub const RegisterClassExW = win32.user32.RegisterClassExW;
 pub const ShowWindow = win32.user32.ShowWindow;
 pub const GetDC = win32.user32.GetDC;
